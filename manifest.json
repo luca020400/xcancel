@@ -3,9 +3,6 @@
   "version": "1.0",
   "manifest_version": 3,
   "description": "Redirects x.com requests to xcancel.com",
-  "background": {
-    "service_worker": "service_worker.js"
-  },
   "declarative_net_request": {
     "rule_resources": [
       {
@@ -16,9 +13,7 @@
     ]
   },
   "permissions": [
-    "declarativeNetRequest",
-    "declarativeNetRequestFeedback",
-    "declarativeNetRequestWithHostAccess"
+    "declarativeNetRequest"
   ],
   "host_permissions": [
     "https://x.com/*"
